@@ -1,0 +1,125 @@
+.resources-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    /* Ensures text and buttons stay in one row */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+
+/* ✅ Make text responsive */
+
+.resources-text {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+    padding-left: 240px;
+    text-align: left;
+    /* Aligns left by default */
+}
+
+
+/* ✅ Ensure italic style with an underline */
+
+.italic-text {
+    font-family: Crusellia, serif;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: lightblue;
+}
+
+
+/* ✅ Keep buttons aligned but flexible */
+
+.button-group {
+    display: flex;
+    gap: 16px;
+    margin-right: 220px;
+}
+
+
+/* ✅ Make buttons more accessible */
+
+.resource-button {
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 9999px;
+    font-size: 14px;
+    background: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resource-button:hover {
+    background: black;
+    color: white;
+}
+
+
+/* 📌 Responsive Adjustments */
+
+
+/* ✅ For tablets (max-width: 1024px) */
+
+@media (max-width: 1024px) {
+    .resources-container {
+        flex-direction: column;
+        /* Stack text and buttons vertically */
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+    .resources-text {
+        font-size: 50px;
+        padding-left: 0;
+    }
+    .button-group {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+
+
+/* ✅ For mobile screens (max-width: 768px) */
+
+@media (max-width: 768px) {
+    .resources-text {
+        font-size: 40px;
+        text-align: center;
+    }
+    .button-group {
+        flex-direction: column;
+        /* Stack buttons */
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+
+/* ✅ For small mobile screens (max-width: 480px) */
+
+@media (max-width: 480px) {
+    .resources-text {
+        font-size: 32px;
+    }
+    .button-group {
+        width: 100%;
+        justify-content: center;
+    }
+    .resource-button {
+        width: 100%;
+        /* Full-width buttons for better tap experience */
+        text-align: center;
+    }
+}

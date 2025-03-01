@@ -1,0 +1,238 @@
+.diversity-container-inclusion {
+    padding: 50px 100px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Horizontal Line */
+
+.divider-inclusion {
+    width: 80%;
+    border: none;
+    border-top: 1px solid black;
+    margin-bottom: 40px;
+}
+
+
+/* Content Layout */
+
+.content-inclusion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+/* Left Section */
+
+.left-section-inclusion {
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    margin-left: 150px;
+}
+
+.toggle-title-inclusion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Toggle Switch */
+
+.toggle-switch-inclusion {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-indicator-inclusion {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    border-radius: 50%;
+    top: 7px;
+    left: 7px;
+}
+
+
+/* Title */
+
+.title-inclusion {
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+}
+
+
+/* CTA Button */
+
+.cta-button-inclusion {
+    background-color: #E8F0D0;
+    color: black;
+    font-weight: bold;
+    padding: 16px 36px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button-inclusion:hover {
+    background-color: #f1f3db;
+}
+
+
+/* Testimonial Card */
+
+.testimonial-card-inclusion {
+    margin-right: 200px;
+    background-color: #E8F0D0;
+    color: black;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-symbol-inclusion {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.testimonial-text-inclusion {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+
+.author-name-inclusion {
+    margin-top: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.author-role-inclusion {
+    font-size: 16px;
+    color: gray;
+}
+
+
+/* Logo Icon */
+
+.logo-icon-inclusion {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+.logo-image-inclusion {
+    width: 80%;
+    height: auto;
+}
+
+
+/* Media Queries */
+
+
+/* For screens 1024px and below */
+
+@media (max-width: 1024px) {
+    .content-inclusion {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .testimonial-card-inclusion {
+        width: 100%;
+        margin-right: 0;
+    }
+    .diversity-container-inclusion {
+        padding: 30px 20px;
+    }
+}
+
+
+/* For screens 768px and below */
+
+@media (max-width: 768px) {
+    .left-section-inclusion {
+        margin-left: 0;
+        align-items: center;
+        gap: 40px;
+    }
+    .content-inclusion {
+        align-items: center;
+    }
+    .title-inclusion {
+        font-size: 28px;
+    }
+    .cta-button-inclusion {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .testimonial-card-inclusion {
+        padding: 20px;
+        max-width: 100%;
+    }
+    .quote-symbol-inclusion {
+        font-size: 36px;
+    }
+    .testimonial-text-inclusion {
+        font-size: 16px;
+    }
+    .author-role-inclusion {
+        font-size: 12px;
+    }
+    .logo-icon-inclusion {
+        width: 70px;
+        height: 40px;
+    }
+}
+
+
+/* For screens 480px and below */
+
+@media (max-width: 480px) {
+    .diversity-container-inclusion {
+        padding: 20px 10px;
+    }
+    .title-inclusion {
+        font-size: 24px;
+    }
+    .cta-button-inclusion {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .testimonial-card-inclusion {
+        padding: 15px;
+    }
+    .quote-symbol-inclusion {
+        font-size: 32px;
+    }
+    .testimonial-text-inclusion {
+        font-size: 14px;
+    }
+    .author-role-inclusion {
+        font-size: 12px;
+    }
+    .logo-icon-inclusion {
+        width: 60px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,93 @@
+/* General Container */
+
+.who-we-are-container1 {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+/* Title */
+
+.title-container1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.title1 {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.highlight1 {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Description */
+
+.description1 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto 90px;
+    text-align: right;
+    margin-right: 90px;
+}
+
+
+/* Divider */
+
+.divider-abouts {
+    border: none;
+    border-top: 1px solid #000;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/* 🔹 Responsive Adjustments */
+
+@media (max-width: 1024px) {
+    .title1 {
+        font-size: 40px;
+    }
+    .description1 {
+        font-size: 15px;
+        text-align: center;
+        margin-right: 0;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-container1 {
+        text-align: center;
+    }
+    .title1 {
+        font-size: 36px;
+    }
+    .description1 {
+        font-size: 14px;
+        max-width: 90%;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title1 {
+        font-size: 28px;
+    }
+    .description1 {
+        font-size: 13px;
+        line-height: 1.4;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+}

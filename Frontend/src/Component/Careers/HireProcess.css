@@ -1,0 +1,109 @@
+/* HireProcess.css */
+
+.hire-container {
+    margin-top: 100px;
+    background-color: #22543d;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 100px;
+    max-width: 100%;
+}
+
+.hire-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hire-divider {
+    margin-top: 50px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.hire-heading {
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+
+/* Responsive Grid */
+
+.hire-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Adjusts dynamically */
+    gap: 20px;
+    max-width: 100%;
+}
+
+
+/* Hire Card */
+
+.hire-card {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hire-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.hire-card p {
+    text-align: left;
+    font-size: 14px;
+    color: #ddd;
+}
+
+
+/* ✅ Responsive Adjustments */
+
+@media (max-width: 1024px) {
+    .hire-container {
+        padding: 30px 15px;
+    }
+    .hire-heading {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hire-container {
+        padding: 25px 10px;
+    }
+    .hire-heading {
+        font-size: 15px;
+    }
+    .hire-card h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hire-container {
+        padding: 20px 5px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .hire-heading {
+        font-size: 14px;
+        text-align: center;
+    }
+    .hire-grid {
+        grid-template-columns: 1fr;
+        /* Single column for smaller screens */
+    }
+    .hire-card h2 {
+        font-size: 22px;
+    }
+    .hire-card p {
+        font-size: 13px;
+    }
+}

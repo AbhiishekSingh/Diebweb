@@ -1,0 +1,165 @@
+/* ✅ Base Styling */
+
+.press-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* ✅ Divider Styling */
+
+.press-divider {
+    border: none;
+    height: 2px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+
+/* ✅ Title Styling */
+
+.press-title {
+    font-weight: 100;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 200;
+}
+
+
+/* ✅ Responsive Grid */
+
+.press-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* ✅ Card Styling */
+
+.press-card {
+    background: #fff;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    border-right: 2px solid #ccc;
+}
+
+
+/* ✅ Image Styling */
+
+.press-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* ✅ Source Styling */
+
+.press-source {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.press-source img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ✅ Headline Styling */
+
+.press-headline {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+/* ✅ Button Styling */
+
+.press-button {
+    background-color: #006400;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.press-button:hover {
+    background-color: #004d00;
+}
+
+
+/* 📌 Responsive Adjustments */
+
+
+/* ✅ Tablets (max-width: 1024px) */
+
+@media (max-width: 1024px) {
+    .press-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .press-title {
+        font-size: 22px;
+    }
+    .press-headline {
+        font-size: 16px;
+    }
+}
+
+
+/* ✅ Mobile Screens (max-width: 768px) */
+
+@media (max-width: 768px) {
+    .press-container {
+        padding: 15px;
+    }
+    .press-title {
+        font-size: 20px;
+    }
+    .press-grid {
+        grid-template-columns: 1fr;
+    }
+    .press-card {
+        padding: 15px;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+    }
+    .press-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* ✅ Small Mobile Screens (max-width: 480px) */
+
+@media (max-width: 480px) {
+    .press-title {
+        font-size: 18px;
+    }
+    .press-headline {
+        font-size: 14px;
+    }
+    .press-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

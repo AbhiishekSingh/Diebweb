@@ -1,0 +1,117 @@
+/* TeamSection.css */
+
+.team-container8 {
+    margin-left: 200px;
+    text-align: left;
+    padding: 40px;
+}
+
+.team-heading8 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.team-highlight8 {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #87ceeb;
+    text-decoration-thickness: 3px;
+}
+
+.team-gallery8 {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    /* ✅ Allows wrapping for smaller screens */
+}
+
+
+/* Ensuring images maintain size but adjust for smaller screens */
+
+.team-card8 {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    width: 450px;
+    max-width: 100%;
+    /* ✅ Prevents images from exceeding container */
+}
+
+.team-img8 {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+/* ✅ Responsive Design */
+
+
+/* Tablet Screens (1024px and below) */
+
+@media (max-width: 1024px) {
+    .team-container8 {
+        margin-left: 100px;
+        padding: 30px;
+    }
+    .team-heading8 {
+        font-size: 2.5rem;
+    }
+    .team-gallery8 {
+        justify-content: center;
+        /* ✅ Center-align on medium screens */
+    }
+}
+
+
+/* Mobile Screens (768px and below) */
+
+@media (max-width: 768px) {
+    .team-container8 {
+        margin-left: 20px;
+        padding: 20px;
+        text-align: center;
+        /* ✅ Align text to center */
+    }
+    .team-heading8 {
+        font-size: 2rem;
+    }
+    .team-gallery8 {
+        flex-direction: column;
+        /* ✅ Stack items below text */
+        align-items: center;
+        /* ✅ Ensures center alignment */
+        margin-top: 50px;
+    }
+    .team-card8 {
+        width: 90%;
+        /* ✅ Adjust width for smaller screens */
+    }
+}
+
+
+/* Small Mobile Screens (480px and below) */
+
+@media (max-width: 480px) {
+    .team-container8 {
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .team-heading8 {
+        font-size: 1.8rem;
+    }
+    .team-gallery8 {
+        justify-content: center;
+        /* ✅ Center gallery */
+        align-items: center;
+        margin-top: 40px;
+    }
+    .team-card8 {
+        width: 100%;
+        /* ✅ Use full width for very small screens */
+    }
+}

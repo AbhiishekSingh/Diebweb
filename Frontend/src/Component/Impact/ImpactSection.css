@@ -1,0 +1,79 @@
+/* Main container */
+
+.impact-container1 {
+    background-color: #1F4637;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    max-width: 1100px;
+    padding: 12px 30px;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    /* Center horizontally */
+    flex-wrap: wrap;
+    /* Allow wrapping */
+}
+
+
+/* Text container */
+
+.impact-text1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+/* Title text */
+
+.impact-title1 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+/* Subtext */
+
+.impact-subtext1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* Button styling */
+
+.impact-button1 {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    /* Prevents text from breaking */
+}
+
+.impact-button1:hover {
+    background: white;
+    color: #1F4637;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .impact-container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+}

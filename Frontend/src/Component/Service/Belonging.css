@@ -1,0 +1,165 @@
+.diversity-container-equity1 {
+    padding: 50px 100px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Horizontal Line */
+
+.divider-equity1 {
+    width: 80%;
+    border: none;
+    border-top: 1px solid black;
+    margin-bottom: 40px;
+}
+
+
+/* Content Layout */
+
+.content-equity1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+/* Left Section */
+
+.left-section-equity1 {
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    margin-left: 150px;
+}
+
+.toggle-title-equity1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Toggle Switch */
+
+.toggle-switch-equity1 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-indicator-equity1 {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    border-radius: 50%;
+    top: 7px;
+    left: 7px;
+}
+
+
+/* Title */
+
+.title-equity1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+}
+
+
+/* CTA Button */
+
+.cta-button-equity1 {
+    background-color: #DBE0FA;
+    color: black;
+    font-weight: bold;
+    padding: 16px 36px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button-equity:hover1 {
+    background-color: #dbeefa;
+}
+
+
+/* Testimonial Card */
+
+.testimonial-card-equity1 {
+    margin-right: 200px;
+    background-color: #DBE0FA;
+    color: black;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-symbol-equity1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.testimonial-text-equity1 {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+
+.author-name-equity1 {
+    margin-top: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.author-role-equity1 {
+    font-size: 16px;
+    color: gray;
+}
+
+
+/* Logo Icon */
+
+.logo-icon-equity1 {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 100px;
+    height: 60px;
+    opacity: 0.8;
+    /* transform: rotate(45deg); */
+}
+
+.logo-image-equity1 {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .content-equity1 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .testimonial-card-equity1 {
+        width: 100%;
+    }
+    .diversity-container-equity1 {
+        padding: 30px 20px;
+    }
+}

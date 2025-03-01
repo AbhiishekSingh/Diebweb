@@ -1,0 +1,206 @@
+/* Navbar Container */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: white;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    z-index: 1000;
+    /* Ensures it stays above other elements */
+}
+
+
+/* Logo */
+
+.nav-logo {
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    height: 32px;
+}
+
+.nav-logo span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+
+/* Dropdown Menu */
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    /* Moves the dropdown to the right */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    min-width: 180px;
+    z-index: 1000;
+    white-space: nowrap;
+    /* Prevents text wrapping */
+}
+
+
+/* Ensure dropdown appears properly */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+    display: block;
+}
+
+
+/* Adjust dropdown links */
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #4a4a4a;
+    text-align: left;
+}
+
+.nav-dropdown-menu a:hover {
+    background: #f4f4f4;
+}
+
+
+/* Contact Button */
+
+.nav-contact-btn {
+    margin-right: 15%;
+    background: #064e3b;
+    height: 50px;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.nav-contact-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Mobile Menu Toggle */
+
+.nav-mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+}
+
+.nav-mobile-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        padding: 16px 20px;
+    }
+    .nav-logo {
+        margin-left: 5%;
+    }
+    .nav-contact-btn {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-mobile-menu {
+        display: flex;
+    }
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+    }
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+    }
+    /* Dropdown should still open to the right */
+    .nav-dropdown-menu {
+        position: relative;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-logo span {
+        font-size: 18px;
+    }
+    .nav-logo img {
+        height: 28px;
+    }
+    .nav-contact-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

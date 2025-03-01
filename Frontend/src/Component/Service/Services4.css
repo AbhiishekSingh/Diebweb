@@ -1,0 +1,128 @@
+.services4-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* .services2-divider {
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #000;
+} */
+
+.services4-title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.services4-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.services4-item {
+    background: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.services4-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.services4-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.services4-description {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Responsive Media Queries */
+
+
+/* For screens 1024px and below */
+
+@media (max-width: 1024px) {
+    .services4-container {
+        padding: 20px;
+    }
+    .services4-title {
+        font-size: 18px;
+    }
+    .services4-heading {
+        font-size: 16px;
+    }
+    .services4-description {
+        font-size: 13px;
+    }
+    .services4-icon {
+        width: 90px;
+    }
+    .services4-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* For screens 768px and below */
+
+@media (max-width: 768px) {
+    .services4-container {
+        padding: 15px;
+    }
+    .services4-title {
+        text-align: center;
+        font-size: 16px;
+    }
+    .services4-grid {
+        grid-template-columns: 1fr;
+    }
+    .services4-item {
+        padding: 15px;
+    }
+    .services4-heading {
+        font-size: 14px;
+    }
+    .services4-description {
+        font-size: 12px;
+    }
+    .services4-icon {
+        width: 80px;
+    }
+}
+
+
+/* For screens 480px and below */
+
+@media (max-width: 480px) {
+    .services4-container {
+        padding: 10px;
+    }
+    .services4-title {
+        font-size: 14px;
+        text-align: center;
+    }
+    .services4-heading {
+        font-size: 13px;
+    }
+    .services4-description {
+        font-size: 11px;
+    }
+    .services4-icon {
+        width: 70px;
+    }
+}

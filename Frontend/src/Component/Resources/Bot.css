@@ -1,0 +1,153 @@
+.resources-container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* ✅ Divider Styling */
+
+.resources-divider1 {
+    border: none;
+    height: 2px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+
+/* ✅ Title Styling */
+
+.resources-title1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+/* ✅ Responsive Grid */
+
+.resources-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* ✅ Card Styling */
+
+.resource-card1 {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+/* ✅ Image Styling */
+
+.resource-image1 {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.img-business {
+    margin-top: 75px;
+}
+
+.img-business1 {
+    margin-top: 35px;
+}
+
+
+/* ✅ Title Styling */
+
+.resource-title1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+/* ✅ Text Styling */
+
+.resource-text1 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* ✅ Button Styling */
+
+.resource-button1 {
+    background-color: #006400;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.resource-button1:hover {
+    background-color: #004d00;
+}
+
+
+/* 📌 Responsive Adjustments */
+
+
+/* ✅ Tablets (max-width: 1024px) */
+
+@media (max-width: 1024px) {
+    .resources-grid1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .resource-title1 {
+        font-size: 18px;
+    }
+    .resource-text1 {
+        font-size: 13px;
+    }
+}
+
+
+/* ✅ Mobile Screens (max-width: 768px) */
+
+@media (max-width: 768px) {
+    .resources-container1 {
+        padding: 15px;
+    }
+    .resources-title1 {
+        font-size: 22px;
+    }
+    .resources-grid1 {
+        grid-template-columns: 1fr;
+    }
+    .resource-card1 {
+        padding: 15px;
+    }
+    .resource-button1 {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* ✅ Small Mobile Screens (max-width: 480px) */
+
+@media (max-width: 480px) {
+    .resources-title1 {
+        font-size: 20px;
+    }
+    .resource-button1 {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

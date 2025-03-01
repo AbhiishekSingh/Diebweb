@@ -223,7 +223,7 @@ const Team = () => {
             <img src={member.image} alt={member.name} className="profile-image" />
             <h3 className="member-name">{member.name}</h3>
             <p className="member-role">{member.role}</p>
-            <Link to={"/profile"} className="connect-button" onClick={() => handleConnect(index)}>
+            <Link to="/profile-details" className="connect-button" onClick={() => handleConnect(index)}>
               Read More
             </Link>
           </div>

@@ -1,5 +1,4 @@
 .diversity-container-equity1 {
-    padding: 50px 100px;
     background-color: white;
     width: 100%;
     display: flex;
@@ -101,7 +100,7 @@
     margin-right: 200px;
     background-color: #DBE0FA;
     color: black;
-    padding: 40px;
+   
     border-radius: 16px;
     max-width: 500px;
     position: relative;

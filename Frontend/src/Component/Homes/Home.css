@@ -8,7 +8,6 @@
     width: 100%;
     background-color: #ffffff;
     text-align: center;
-    padding: 40px 20px;
     margin-top: 120px;
 }
 
@@ -22,6 +21,7 @@
     margin-bottom: 12px;
     max-width: 90%;
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 .heading-section .highlight {
@@ -185,7 +185,7 @@
 
 @media (max-width: 480px) {
     .home-container {
-        padding: 20px;
+      
         margin-top: 100px;
     }
     .heading-section h1 {
@@ -200,5 +200,306 @@
     }
     .sky-img-container {
         height: 300px;
+    }
+}
+
+
+/* General Styles */
+
+.stats-container {
+    height: auto;
+    /* Adjusts height dynamically */
+    background-color: #15382f;
+    color: white;
+    text-align: center;
+    /* Adjusted padding for better spacing */
+    width: 100%;
+}
+
+
+/* Heading */
+
+.stats-heading {
+    font-family: "EB Garamond", serif;
+    font-size: 3rem;
+    /* Adjusted for better mobile scaling */
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.move-text {
+    font-family: "Lobster", serif;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+
+/* Grid Layout */
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* Cards */
+
+.stats-card {
+    flex: 1;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+
+/* Percentage Text */
+
+.stats-percentage {
+    font-size: 2.5rem;
+    /* Adjusted size for readability */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Description */
+
+.stats-description {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+/* Logo */
+
+.stats-logo {
+    height: 40px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+
+/* Divider */
+
+.divider {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: black;
+}
+
+
+/* Hide divider for last item */
+
+.stats-card:last-child .divider {
+    display: none;
+}
+
+
+/* 🔹 Responsive Styles */
+
+@media (max-width: 1024px) {
+    .stats-grid {
+        flex-direction: column;
+        /* Switches to vertical layout */
+        gap: 40px;
+    }
+    .divider {
+        display: none;
+        /* Removes dividers for a clean look */
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-heading {
+        font-size: 2.5rem;
+        /* Adjusts title size */
+    }
+    .stats-percentage {
+        font-size: 2rem;
+    }
+    .stats-description {
+        font-size: 0.9rem;
+    }
+    .stats-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-heading {
+        font-size: 2rem;
+        /* Smaller title */
+    }
+    .stats-percentage {
+        font-size: 1.8rem;
+    }
+    .stats-description {
+        font-size: 0.85rem;
+    }
+    .stats-card {
+        padding: 20px;
+    }
+}
+
+/* IntegratedModel.css */
+
+.container-add6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+
+.title-add6 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.description-add6 {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.underline-add6 {
+    text-decoration: underline;
+}
+
+.grid-container-add6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background-color: #F9F7F3;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .grid-container-add6 {
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
+    }
+    .subtitle-add6 {
+        font-size: 1.5rem;
+    }
+    .grid-item-add6 {
+        text-align: center !important;
+    }
+    .grid-container-add6::before {
+        display: none;
+        /* Hide vertical divider on small screens */
+    }
+}
+
+.grid-item-add6 {
+    position: relative;
+}
+
+.left-add6 {
+    text-align: left;
+}
+
+.right-add6 {
+    text-align: right;
+}
+
+.subtitle-add6 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.text-add6 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button-add6 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.diversity-add6 {
+    background-color: #1A3D2F;
+    color: white;
+}
+
+.inclusion-add6 {
+    background-color: #C5CBE3;
+    color: white;
+}
+
+.equity-add6 {
+    background-color: #E8EBCF;
+    color: black;
+}
+
+.belonging-add6 {
+    background-color: #B0D8EA;
+    color: black;
+}
+
+.button-add6:hover {
+    opacity: 0.8;
+}
+
+
+/* Horizontal Line */
+
+.horizontal-line-add6 {
+    grid-column: span 2;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+
+/* Vertical Line */
+
+.grid-container-add6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    transform: translateX(-50%);
+}
+
+
+/* Remove vertical line on small screens */
+
+@media (max-width: 768px) {
+    .grid-container-add6::before {
+        display: none;
+    }
+    .horizontal-line-add6 {
+        grid-column: span 1;
     }
 }

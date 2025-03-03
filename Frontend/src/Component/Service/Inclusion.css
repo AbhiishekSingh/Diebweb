@@ -1,5 +1,5 @@
 .diversity-container-inclusion {
-    padding: 50px 100px;
+    padding: 50px 0px;
     background-color: white;
     width: 100%;
     display: flex;
@@ -101,7 +101,7 @@
     margin-right: 200px;
     background-color: #E8F0D0;
     color: black;
-    padding: 40px;
+    
     border-radius: 16px;
     max-width: 500px;
     position: relative;
@@ -187,7 +187,6 @@
         font-size: 14px;
     }
     .testimonial-card-inclusion {
-        padding: 20px;
         max-width: 100%;
     }
     .quote-symbol-inclusion {
@@ -210,7 +209,7 @@
 
 @media (max-width: 480px) {
     .diversity-container-inclusion {
-        padding: 20px 10px;
+        padding: 20px 0px;
     }
     .title-inclusion {
         font-size: 24px;
@@ -220,7 +219,7 @@
         font-size: 12px;
     }
     .testimonial-card-inclusion {
-        padding: 15px;
+        
     }
     .quote-symbol-inclusion {
         font-size: 32px;

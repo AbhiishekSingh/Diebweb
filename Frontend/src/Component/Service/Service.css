@@ -106,7 +106,7 @@ body{
 .next-container {
     width: 100%;
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 0px;
     background-color: white;
 }
 
@@ -141,6 +141,9 @@ body{
 /* Responsive Media Queries */
 
 @media (max-width: 1024px) {
+    body{
+        width: 100%;
+    }
     .dei-container {
         flex-direction: column;
         justify-content: center;
@@ -191,7 +194,7 @@ body{
         font-size: 12px;
     }
     .next-container {
-        padding: 60px 20px;
+     
     }
     .next-title {
         font-size: 28px;
@@ -241,7 +244,7 @@ body{
         font-size: 12px;
     }
     .next-container {
-        padding: 40px 20px;
+       
     }
     .next-title {
         font-size: 24px;
@@ -255,6 +258,9 @@ body{
 }
 
 @media (max-width: 480px) {
+    body{
+        width: 100%;
+    }
     .dei-container {
         padding-left: 10px;
         padding-right: 10px;
@@ -288,7 +294,7 @@ body{
         font-size: 12px;
     }
     .next-container {
-        padding: 30px 10px;
+        
     }
     .next-title {
         font-size: 20px;

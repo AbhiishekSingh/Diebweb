@@ -1,5 +1,5 @@
 .diversity-container-add3 {
-    padding: 50px 100px;
+
     background-color: white;
     width: 100%;
     display: flex;
@@ -101,7 +101,6 @@
     margin-right: 200px;
     background-color: #1F4637;
     color: white;
-    padding: 40px;
     border-radius: 16px;
     max-width: 500px;
     position: relative;
@@ -160,7 +159,7 @@
         margin-right: 0;
     }
     .diversity-container-add3 {
-        padding: 30px 20px;
+        
     }
 }
 
@@ -192,9 +191,7 @@
         padding: 12px 20px;
         font-size: 16px;
     }
-    .testimonial-card-add3 {
-        padding: 20px;
-    }
+   
     .quote-symbol-add3 {
         font-size: 40px;
     }

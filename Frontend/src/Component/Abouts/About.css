@@ -1,4 +1,78 @@
-/* General Container */
+
+  .founder-container h1{
+    font-size: 2rem
+  }
+  .founder-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .founder-card {
+    max-width: 900px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .founder-image-container {
+    text-align: center;
+  }
+  
+  .founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .founder-text-container {
+    text-align: center;
+  }
+  
+  .founder-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #047857;
+  }
+  
+  .founder-paragraph {
+    margin-top: 1rem;
+    color: #374151;
+    font-size: 1rem;
+  }
+  
+  .founder-quote {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #047857;
+    font-style: italic;
+  }
+  
+  @media (min-width: 768px) {
+    .founder-card {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .founder-text-container {
+      text-align: left;
+      flex: 1;
+    }
+  }
+  
 
 .who-we-are-container1 {
     max-width: 1200px;
@@ -7,9 +81,6 @@
     font-family: Arial, sans-serif;
     text-align: center;
 }
-
-
-/* Title */
 
 .title-container1 {
     text-align: left;
@@ -26,7 +97,11 @@
     font-weight: bold;
     text-decoration: underline;
 }
-
+.stats-discr {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 /* Description */
 
@@ -50,44 +125,354 @@
     width: 100%;
 }
 
+.wh-container {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .wh-section {
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .wh-who-we-are {
+    flex-direction: row;
+    border: 1px solid #ccc;
+  }
+  
+  .wh-why-we-exist {
+    background-color: #2f855a;
+    color: white;
+    flex-direction: row-reverse;
+    border: 1px solid #ccc;
+  }
+  
+  .wh-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .wh-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wh-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .wh-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2f855a;
+  }
+  
+  .wh-subtitle {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .wh-subheading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .wh-text {
+    font-size: 18px;
+    color: #4a5568;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  .wh-text2{
+    font-size: 18px;
+    color: white;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  
+  .wh-highlight {
+    font-weight: bold;
+    color: #2f855a;
+  }
+  
+  .wh-bold {
+    font-weight: bold;
+  }
+  
 
-/* 🔹 Responsive Adjustments */
 
-@media (max-width: 1024px) {
-    .title1 {
-        font-size: 40px;
-    }
-    .description1 {
-        font-size: 15px;
-        text-align: center;
-        margin-right: 0;
-        max-width: 80%;
-    }
+/* DiversityImpact.css */
+.D-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.D-content {
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.D-left-section {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.D-right-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.D-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.D-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.D-subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.D-subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.D-impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.D-impact-item {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.D-icon {
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
-    .title-container1 {
-        text-align: center;
-    }
-    .title1 {
-        font-size: 36px;
-    }
-    .description1 {
-        font-size: 14px;
-        max-width: 90%;
-        margin: 0 auto 50px;
-        text-align: center;
-    }
+  .D-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .D-left-section {
+    padding-right: 0;
+  }
+
+  .D-impact-item {
+    justify-content: center;
+  }
 }
 
-@media (max-width: 480px) {
-    .title1 {
-        font-size: 28px;
-    }
-    .description1 {
-        font-size: 13px;
-        line-height: 1.4;
-        max-width: 100%;
-        margin-bottom: 40px;
-    }
-}
+
+.D-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .D-card {
+    max-width: 80rem;
+    background: white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .D-header {
+    text-align: center;
+  }
+  
+  .D-header h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: #1f2937;
+  }
+  
+  .D-header p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-top: 1rem;
+  }
+  
+  .D-section-title {
+    font-size:1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    border-bottom: 4px solid #047857;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .D-impact-cards,
+  .D-future-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .D-card-item {
+    background: #f3f4f6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .D-card-item span {
+    font-size: 2rem;
+  }
+  
+  .D-card-item p {
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  .D-cta {
+    text-align: center;
+  }
+  
+  .D-cta p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .D-cta button {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: #047857;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 15px #047857;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .D-cta button:hover {
+    background: #036247;
+  }
+  
+
+  /* Container */
+.ab-container {
+    background-color: #f7fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Card */
+  .ab-card {
+    width: 80%;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title */
+  .ab-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #047857;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid Layout */
+  .ab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Feature Box */
+  .ab-feature {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Icon */
+  .ab-icon {
+    font-size: 2rem;
+    color: #047857;
+  }
+  
+  /* Feature Title */
+  .ab-feature-title {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  /* Feature Description */
+  .ab-feature-description {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  

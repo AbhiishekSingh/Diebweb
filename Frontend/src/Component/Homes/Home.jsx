@@ -6,18 +6,18 @@ import { Link, useNavigate } from "react-router-dom";
 
 const statsData = [
   {
-    percentage: "+27%",
-    description: "Employees agree leadership values creating an inclusive culture",
+    percentage: "30%",
+    description: "More employees say leadership fosters ",
     logo: "https://s3.us-east-1.amazonaws.com/peoplism.s8/statistics/_AUTOx70_fit_center-center_none/image-1.png", // Replace with actual logo URL
   },
   {
-    percentage: "+19%",
-    description: "Employees believe performance management is fair and objective",
+    percentage: "22%",
+    description: "improvement in perceived fairness of performance management",
     logo: "https://s3.us-east-1.amazonaws.com/peoplism.s8/statistics/_AUTOx70_fit_center-center_none/image-2.png", // Replace with actual logo URL
   },
   {
-    percentage: "+86%",
-    description: "Employees report a greater sense of belonging",
+    percentage: "88%",
+    description: "Stronger sense of belonging in the workplace",
     logo: "https://s3.us-east-1.amazonaws.com/peoplism.s8/statistics/_AUTOx70_fit_center-center_none/image-3.png", // Replace with actual logo URL
   },
 ];
@@ -39,12 +39,12 @@ const Home = () => {
       {/* Heading Section */}
       <div className="heading-section">
         <h1>
-          Get a <span className="highlight">thriving</span> organization, {" "}
-          <span className="highlight">quicker</span> and {" "}
-          <span className="highlight">easier</span>.
+        Faces of Change:   <span className="highlight">Carving</span> an {" "}
+          <span className="highlight">quicker</span> Inclusive{" "}
+          <span className="highlight"> Future</span>.
         </h1>
         <p className="subheading">
-          Peoplism is an HR & DEIB consulting firm that gets results.
+        At DEIB Innovations, we don’t just support change—we build it. Strategically. Sustainably. With measurable results.
         </p>
       </div>
 
@@ -106,7 +106,7 @@ const Home = () => {
           <div key={index} className="stats-card">
             <h2 className="stats-percentage">{stat.percentage}</h2>
             <p className="stats-description">{stat.description}</p>
-            <img src={stat.logo} alt="Company Logo" className="stats-logo" />
+            {/* <img src={stat.logo} alt="Company Logo" className="stats-logo" /> */}
             {index < statsData.length - 1 && <div className="divider"></div>}
           </div>
         ))}
@@ -116,21 +116,20 @@ const Home = () => {
 
 
     <div className="container-add6">
-      <h1 className="title-add6">Our Integrated Model</h1>
+      <h1 className="title-add6">A Seamless, Integrated DEIB Approach</h1>
       <p className="description-add6">
-        Good HR has DEIB embedded at every turn. We help people leaders operationalize
-        best-practice strategies that advance DEIB and create more efficient and high-performing
-        organizations. Through <span className="underline-add6">strategy & consulting</span> and <span className="underline-add6">trainings</span>, we ensure your
-        people and your organization will flourish.
+      True inclusion isn’t an initiative—it’s the foundation of a 
+      thriving, high-performing workplace. We help organizations 
+      embed <span className="underline-add6"> DEIB </span> into daily operations  ensuring it’s not just a , <span className="underline-add6"> value </span>  but a tangible advantage.
       </p>
 
       <div className="grid-container-add6">
         <div className="grid-item-add6 left-add6">
           <h2 className="subtitle-add6">Diversity</h2>
           <p className="text-add6">
-            Broaden your candidate pool and hire the best person for the job
+          Expand talent pipelines & attract top-tier candidates.
           </p>
-          <Link to="/Service" className="button-add6 diversity-add6" onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/service" className="button-add6 diversity-add6" onClick={() => window.scrollTo(0, 0)}>
             View Services
           </Link>
         </div>
@@ -138,9 +137,9 @@ const Home = () => {
         <div className="grid-item-add6 right-add6">
           <h2 className="subtitle-add6">Inclusion</h2>
           <p className="text-add6">
-            Create a culture where everyone feels supported, valued, and able to participate
+          Foster a culture where every voice matters.
           </p>
-          <button className="button-add6 inclusion-add6" onClick={() => handleNavigation("/Service")}>
+          <button className="button-add6 inclusion-add6" onClick={() => handleNavigation("/service")}>
             View Services
           </button>
         </div>
@@ -149,9 +148,9 @@ const Home = () => {
         <div className="grid-item-add6 left-add6">
           <h2 className="subtitle-add6">Equity</h2>
           <p className="text-add6">
-            Develop, evaluate, promote and compensate employees fairly and objectively
+          Build fair, objective career & compensation systems.
           </p>
-          <button className="button-add6 equity-add6" onClick={() => handleNavigation("/Service")}>
+          <button className="button-add6 equity-add6" onClick={() => handleNavigation("/service")}>
             View Services
           </button>
         </div>
@@ -159,9 +158,9 @@ const Home = () => {
         <div className="grid-item-add6 right-add6">
           <h2 className="subtitle-add6">Belonging</h2>
           <p className="text-add6">
-            Engage employees through connection and psychological safety
+          Create a workplace where employees feel valued & empowered.
           </p>
-          <button className="button-add6 belonging-add6" onClick={() => handleNavigation("/Service")}>
+          <button className="button-add6 belonging-add6" onClick={() => handleNavigation("/service")}>
             View Services
           </button>
         </div>

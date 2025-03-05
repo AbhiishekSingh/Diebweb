@@ -59,7 +59,10 @@ const Testimonials = () => {
     <section className="testimonials-section">
       <hr className="divider-testimonials" />
       <div className="header1">
-        <h3 className="title">FROM OUR CLIENTS</h3>
+        <div className="make-it-block"> 
+        <h3 className="title-t">Real Impact</h3>
+        <p>Hear from organizations that have transformed their workplaces with us.</p>
+        </div>
         <div className="arrows">
           <button className="arrow" onClick={scrollLeft}>&#8249;</button>
           <button className="arrow" onClick={scrollRight}>&#8250;</button>

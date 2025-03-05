@@ -1,39 +1,3 @@
-// import React from "react";
-// import "./Header.css"; // Import the CSS file
-
-// const Header = () => {
-//   return (
-//     <nav className="nav-container">
-//       {/* Logo */}
-//       <div className="nav-logo">
-//         <img src="/logo.png" alt="Logo" />
-//         <span>peoplism</span>
-//       </div>
-
-//       {/* Navigation Links */}
-//       <ul className="nav-links">
-//         <li><a href="#">Home</a></li>
-//         <li className="nav-dropdown">
-//           <a href="#">Services</a>
-//           <div className="nav-dropdown-menu">
-//             <a href="#">Strategy & Consulting</a>
-//             <a href="#">Training</a>
-//           </div>
-//         </li>
-//         <li><a href="#">Resources</a></li>
-//         <li><a href="#">About us</a></li>
-//         <li><a href="#">Careers</a></li>
-//         <li><a href="#">Impact</a></li>
-//       </ul>
-
-//       {/* Contact Button */}
-//       <button className="nav-contact-btn">Contact us</button>
-//     </nav>
-//   );
-// };
-
-// export default Header;
-
 import React, { useState } from "react";
 import "./Header.css"; // Import the CSS file
 import { Link } from 'react-router-dom';
@@ -63,19 +27,20 @@ const Header = () => {
 
       {/* Navigation Links */}
       <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-        <li><Link to="/">Home</Link></li>
-        {/* <li><Link to="/service">Service</Link></li> */}
-        <li><Link to="/about-us">About us</Link></li>
+      <li><Link to="/">Home</Link></li>
         <li className="nav-dropdown">
           <li><Link to="/service">Services</Link></li>
-          <div className="nav-dropdown-menu">
+          {/* <div className="nav-dropdown-menu">
             <Link to="/strategy&consulting">Strategy & Consulting</Link>
             <Link to="/traning">Traning</Link>
-          </div>
+          </div> */}
         </li>
-        <li><Link to="/impact">Impact</Link></li>
-        <li><Link to="/career">Careers</Link></li>
         <li><Link to="/resources">Resources</Link></li>
+        <li><Link to="/about-us">About us</Link></li>
+        <li><Link to="/career">Careers</Link></li>
+        <li><Link to="/impact">Impact</Link></li>
+       
+       
       </ul>
 
       {/* Contact Button */}

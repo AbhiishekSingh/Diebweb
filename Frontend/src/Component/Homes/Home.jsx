@@ -55,7 +55,7 @@ const Home = () => {
       </div>
 
       {/* Logo Section */}
-      <div className="logo-section">
+      {/* <div className="logo-section">
         <div className="logo-slider">
           <div className="logo-item">
             <img
@@ -94,7 +94,7 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
     {/* <StatsSection/> */}
     <div className="stats-container">

@@ -1,0 +1,89 @@
+.cp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cp-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cp-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .cp-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .cp-section {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cp-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .cp-text {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .cp-list {
+    padding-left: 20px;
+  }
+  
+  .cp-strategy, .cp-impact {
+    margin-top: 30px;
+  }
+  
+  .cp-card, .cp-impact-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cp-card-title, .cp-impact-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .cp-footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .cp-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .cp-button:hover {
+    background: #0056b3;
+  }
+  

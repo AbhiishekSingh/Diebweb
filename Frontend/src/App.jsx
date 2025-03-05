@@ -1,38 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-// import Header from './Component/Header/Header'
-// import Home from './Component/Homes/Home'
-// import Contact from './Component/Contact/Contact'
-// import Footer from './Component/Footer/Footer'
-// import Service from './Component/Service/Service'
-// import Resources from './Component/Resources/Resources'
-// import StatsSection from './Component/Homes/StatsSection'
-// import Career from './Component/Careers/Career'
-// import Training from './Component/Service/DropDown/Training'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <Header/>
-//       {/* <StatsSection/> */}
-//       <Home/>
-//       {/* <Service/> */}
-//       {/* <Training/> */}
-//       {/* <Resources/> */}
-//       {/* <About/> */}
-//       {/* <Impact/> */}
-//       {/* <Career/> */}
-//       {/* <Contact/> */}
-//       <Footer/>
-//     </>
-//   )
-// }
-
-// export default App
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Component/Header/Header';
@@ -47,6 +12,8 @@ import Impact from './Component/Impact/Impact';
 import About from './Component/Abouts/About';
 import ContactForm from './Component/Contact/ContactForm';
 import Profile from './Component/Profiles/Profile';
+import DEIBCaseStudy from './Component/Resources/DIEBCasestudy';
+import GetTouch from './Component/Resources/GetTouch';
 
 function App() {
 
@@ -64,6 +31,8 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/profile-details" element={<Profile/>} />
+        <Route path="/case" element={<DEIBCaseStudy/>} /> 
+        <Route path="/getintouch" element={<GetTouch/> } />
       </Routes>
       <Footer />
     </Router>

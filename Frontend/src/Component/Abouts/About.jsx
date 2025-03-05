@@ -36,7 +36,7 @@ const About = () => {
       <div className="founder-card">
         <div className="founder-image-container">
           <img
-            src="https://source.unsplash.com/300x300/?leader,woman"
+            src="/images/Team/1.jpg"
             alt="Neetu Mehta"
             className="founder-image"
           />
@@ -63,24 +63,23 @@ const About = () => {
       <div className="founder-card">
         <div className="founder-image-container">
           <img
-            src="https://source.unsplash.com/300x300/?leader,man"
+            src="/images/Team/6.enc"
             alt="Shyam Bahadur"
             className="founder-image"
           />
         </div>
         <div className="founder-text-container">
         <h1 className="founder-title">
-           Shyam
+        Shyambahadur Prajapati 
           </h1>
-          <p className="founder-paragraph">
-            <strong>Shyam </strong>, a proud polio survivor, has lived the challenges
-            of accessibility and inclusion firsthand. His journey from overcoming personal
-            barriers to driving systemic change in workplaces fuels the mission of DEIB Innovations.
+          <p className="founder-paragraph"> <strong> Shyam </strong>
+            HR Leader & Innovator 17 years of experience in Human Resources, Shyambahadur Prajapati has played a pivotal role in shaping HR strategies across leading organizations like Myntra, GM Infotech, Interactive Group, iTech Media, and Thomas International. Currently serving as Head HR at GM Infotech, he leads comprehensive HR functions, driving talent acquisition, performance management, employee engagement, and organizational development.
           </p>
-          <p className="founder-paragraph">
-            With a deep-rooted belief in <strong>Equity, Representation, and Workplace Transformation</strong>,
-            he co-founded DEIB Innovations to turn Intent into Action—helping businesses build truly
-            inclusive and high-performing organizations.
+          <p className="founder-paragraph">  Shyambahadur is known for his
+
+ <strong> innovative approach  </strong>
+ to HR, including integrating numerology in hiring decisions, fostering inclusive workplace cultures, and implementing strategies that enhance operational efficiency. His expertise and forward-thinking mindset continue to make a lasting impact in the HR community.
+
           </p>
           <p className="founder-quote">“Inclusion isn’t just a principle—it’s my purpose.” – Shyam </p>
         </div>
@@ -119,7 +118,7 @@ const About = () => {
         {/* Left Section - Image */}
         <div className="wh-image-container">
           <img
-            src="https://source.unsplash.com/500x400/?growth,success"
+            src="#"
             alt="Growth Representation"
             className="wh-image"
           />

@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 550px;
+    height: 450px;
     background-color: white;
     padding-left: 100px;
     /* Adjust for alignment */
@@ -49,16 +49,28 @@ body{
     margin-top: 10px;
     max-width: 500px;
 }
-
+.service-image{
+    width: 100%;
+    margin-top: -100px;
+    align-items: center;
+    justify-content: center;
+}
+.service-image img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+}
 .image1 {
-    margin-left: 250px;
+    height: 700px;
 }
 
 .deib-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 500px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: -400px;
     background-color: white;
     padding-right: 150px;
     /* Adjust to match alignment */

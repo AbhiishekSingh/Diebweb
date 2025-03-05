@@ -28,7 +28,7 @@ const Service = () => {
         </p>
       </div>
     </div>
-    <img class="image1" src="https://peoplism.com/assets/images/services-illo-1300.avif" alt="" />
+   <div className="service-image"> <img className="image1" src="https://peoplism.com/assets/images/services-illo-1300.avif" alt="" /> </div> 
      <div className="deib-container">
       <div className="deib-content">
         <h2 className="deib-title">DEIB Assessment & Roadmap</h2>

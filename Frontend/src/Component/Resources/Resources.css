@@ -1,3 +1,128 @@
+.rc h1{
+    font-size: 2.5rem;
+    color: #2e7d32;
+    padding-left: 25%;
+    margin: 0px;
+    
+}
+.rc-deib-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .rc-deib-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .rc-deib-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .rc-deib-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .rc-deib-content {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .rc-deib-content p {
+    font-size: 1.1rem;
+    color: #444;
+  }
+    
+  
+  
+  
+  /* Main container */
+  .r-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  /* Header section */
+  .r-header {
+    max-width: 600px;
+    margin: auto;
+   
+  }
+  
+  .r-header h1 {
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  .r-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  /* Card design */
+  .r-card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .r-card h2 {
+    color: #2e7d32; /* Green heading */
+  }
+  
+  .r-card ul {
+    margin-left: 20px;
+  }
+  
+  .r-card li {
+    margin-top: 8px;
+  }
+  
+  /* Button design */
+  .r-btn {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  
+  .r-btn:hover {
+    background-color: #1b5e20;
+  }
+  
+
 .resources-container {
     margin-top: 50px;
     display: flex;
@@ -20,7 +145,88 @@
     /* Aligns left by default */
 }
 
-
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .contact-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-blue {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+  }
+  
+  .contact-green {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+  }
+  
+  .contact-purple {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+  }
+  
+  .contact-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  .contact-button.contact-blue {
+    background-color: #0d47a1;
+  }
+  
+  .contact-button.contact-blue:hover {
+    background-color: #1565c0;
+  }
+  
+  .contact-button.contact-green {
+    background-color: #1b5e20;
+  }
+  
+  .contact-button.contact-green:hover {
+    background-color: #2e7d32;
+  }
+  
+  .contact-button.contact-purple {
+    background-color: #6a1b9a;
+  }
+  
+  .contact-button.contact-purple:hover {
+    background-color: #8e24aa;
+  }
+  
 /* ✅ Ensure italic style with an underline */
 
 .italic-text {
@@ -55,6 +261,7 @@
     padding: 8px 16px;
     border: 1px solid black;
     border-radius: 9999px;
+    color: black;
     font-size: 14px;
     background: none;
     cursor: pointer;
